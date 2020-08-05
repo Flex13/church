@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto&display=swap');
+
+
+
+
+
+
+
+#intro {
+    background-image: url("../img/intro.jpg");
+    height: 60vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#about {
+    background-image: url("../img/about.jpg");
+    height: 60vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#events {
+    background-image: url("../img/events.jpg");
+    height: 60vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contact {
+    background-image: url("../img/contact.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contact2 {
+    background-image: url("../img/contact.jpg");
+    height: 40vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#register {
+    background-image: url("../img/register.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#register2 {
+    background-image: url("../img/register.jpg");
+    height: 40vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#footer {
+    background-image: url("../img/footer.jpg");
+    height: 60vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#logo {
+    font-size: 45px;
+    margin: 0;
+    display: block;
+}
+
+li {
+    padding: 0;
+    margin: 0px 15px;
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: white
+}
+
+
+.navbar {
+    background-color: #0d47a1;
+}
+
+.section-heading {
+    color: #FF8800 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.section-title {
+    color: #0d47a1 !important;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.sidebar-section {
+    color: #CC0000 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar-text {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.sub-section {
+    color: white !important;
+    font-weight: 700; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebarCard {
+    border: 0;
+    -webkit-box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 10px 20px 0 rgba(243, 188 188, 0.5);
+}
+
+.sidebar-span {
+    color: #0099CC !important;
+    font-weight: 400;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 13px;
+}
+
+.page-footer {
+    background-color: #0d47a1 !important;
+    color: white;
+}
+
+.footer-links {
+    color: #FF8800;
+    font-weight: 500;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.btn-red {
+    color: #fff;
+    background-color: #CC0000;
+}
