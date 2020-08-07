@@ -4,13 +4,13 @@
 
 
 <!--Main layout-->
-<main class="sidebar-layout mt-5">
-    <div class="container">
+<main class="sidebar-layout mt-3">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-8">
                 <!--Section: Content-->
 
-                <div id="contact"></div>
+                <div id="ministry"></div>
 
                 <!--Section: Content-->
             </div>
@@ -30,9 +30,9 @@
     $(document).ready(function() {
         $.ajax({
             type: "POST",
-            url: "ajax/contact/contact.php",
+            url: "ajax/ministry/ministry.php",
         }).done(function(data) {
-            $("#contact").html(data);
+            $("#ministry").html(data);
         });
     });
 </script>

@@ -12,13 +12,14 @@ if (test_input(isset($_GET['m']))) {
 
 
 <!--Main layout-->
-<main class="sidebar-layout mt-5">
-    <div class="container-fluid">
+<main class="sidebar-layout mt-3">
+    <div class="container-fluid ">
         <div class="row">
             <div class="col-md-8">
                 <!--Section: Content-->
 
-                <div id="about"></div>
+            <div id="registration"></div>
+       
 
                 <!--Section: Content-->
             </div>
@@ -39,22 +40,22 @@ if (test_input(isset($_GET['m']))) {
         var message = '<?php if (isset($message)) echo $message; ?>';
 
 
-            if (message == "about") {
+            if (message == "login") {
 
         $.ajax({
             type: "POST",
-            url: "ajax/about/about.php",
+            url: "ajax/registration/login.php",
         }).done(function(data) {
-            $("#about").html(data);
+            $("#registration").html(data);
         });
 
-            } else if (message == "statement"){
+            } else if (message == "register"){
 
                 $.ajax({
             type: "POST",
-            url: "ajax/about/statement.php",
+            url: "ajax/registration/register.php",
         }).done(function(data) {
-            $("#about").html(data);
+            $("#registration").html(data);
         });
             }
     });
