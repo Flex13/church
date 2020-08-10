@@ -13,12 +13,12 @@
                 <header>
                     <!-- Background image -->
                     <div id="events" class="bg-image shadow-2-strong">
-                        <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
+                        <div class="mask" style="background-color: rgba(0, 0, 0, 0.5);">
                             <div class="container d-flex align-items-center justify-content-center text-center h-100">
                                 <div class="text-white">
 
-                                    <h1 class=" section-heading mb-0">HPS AFM</h1>
-                                    <h6 class="section-heading py-2">Vaal</h6>
+                                    <h1 class=" section-heading text-warning mb-0">HPS AFM</h1>
+                                    <h6 class="section-heading text-warning py-2">Vaal</h6>
 
 
 
@@ -41,8 +41,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="bg-image hover-overlay shadow-1-strong rounded ripple m-0 p-0" data-ripple-color="light">
-                                    <img src="assets/img/youth.jpg" class="img-fluid m-0 p-0">
+                                <div class="bg-image hover-overlay rounded ripple m-0 p-0" data-ripple-color="light" style="height: 400px;">
+                                    <img src="assets/img/event.jpg" class="img-fluid m-0 p-0 mx-auto" style="height: 100%;">
                                     <a href="#!">
                                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                     </a>
@@ -51,14 +51,16 @@
 
                             <div class="col-md-8">
                                 <div class="px-3">
-                                <h5 class="text-warning my-3">FIRST YEAR LIFE COACHING SESSION</h5>
-                                <p>
-                                    First year life coaching programmes. Internal and External Residence. All Coaching session start at 17h30 after classes.
-                                </p>
+                                    <h5 class="text-warning my-3">Church Webinar August 2020</h5>
+                                    <p>
+                                        Blessed to be a source of blessing<br>
+                                        <b>ZoomID:</b> 2031580625<br>
+                                        <b>Passcode:</b> 12345678
+                                    </p>
 
-                                <a href="events-page.php" class="btn btn-primary">View</a>
+                                    <a href="#" class="btn btn-primary">View</a>
                                 </div>
-                                
+
                             </div>
                         </div>
 

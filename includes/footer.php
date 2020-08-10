@@ -7,9 +7,9 @@
             <div class="col-md-7 mt-md-0 p-4">
 
                 <!-- Content -->
-                <h1 class="section-heading mb-0">HPS AFM</h1><small class="text-warning">Vaal</small>
-                <h4><i class="fab fa-facebook"></i> | <i class="fab fa-twitter"></i> | <i class="fab fa-instagram"></i> | <i class="fab fa-youtube"></i></h4>
-                <p class="text-light">Contact : info@hpsafmvaal.com <br> Tel: 016-330-5007 <br> Fax: 086-587-9097</p>
+                <h1 class="section-heading text-warning mb-0">HPS AFM</h1><small class="text-warning">Vaal</small>
+                <h4><a href="https://www.facebook.com/heirsofpromisessanctuaryvaal/" class="text-warning"><i class="fab fa-facebook"></i></a> | <a href="https://twitter.com/hpsvaal/" class="text-warning"><i class="fab fa-twitter"></i></a> | <a href="https://www.instagram.com/heirs_of_promises/" class="text-warning"><i class="fab fa-instagram"></i></a> | <a href="https://www.youtube.com/channel/UCwFZ8CuDGZwiLDod_8CJ5CQ/" class="text-warning"><i class="fab fa-youtube"></i></a></h4>
+                <p class="text-light">Contact : info@hpsafmvaal.org.za <br> Tel: 016-330-5007 <br> Fax: 086-587-9097</p>
 
             </div>
             <!-- Grid column -->
@@ -24,13 +24,13 @@
                         <a class="footer-links" href="index.php">Home</a>
                     </li>
                     <li>
-                        <a class="footer-links" href="events.php">Ministry</a>
+                        <a class="footer-links" href="ministry.php">Ministry</a>
                     </li>
                     <li>
                         <a class="footer-links" href="contact.php">Contact</a>
                     </li>
                     <li>
-                        <a class="footer-links" href="login.php">Login</a>
+                        <a class="footer-links" href="registration.php?m=login">Login</a>
                     </li>
                 </ul>
 

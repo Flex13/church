@@ -2,6 +2,20 @@
 <?php include('includes/nav.php'); ?>
 
 
+<header>
+    <!-- Background image -->
+    <div id="events" class="bg-image shadow-2-strong">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.5);">
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                <div class="text-white">
+                    <h1 class="text-center text-warning my-0">Ministries</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Background image -->
+</header>
+
 
 <!--Main layout-->
 <main class="sidebar-layout mt-3">

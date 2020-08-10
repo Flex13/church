@@ -4,7 +4,7 @@
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
             <div class="container d-flex align-items-center justify-content-center text-center h-100">
                 <div class="text-white">
-                    <h1 class="section-heading text-center my-0">Statement of Faith</h1>
+                    <h1 class="text-center text-warning  my-0">Statement of Faith</h1>
                 </div>
             </div>
         </div>
