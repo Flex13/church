@@ -1,6 +1,7 @@
 
 <?php include('../../config/db.php'); ?>
 <?php include('../../config/functions.php'); ?>
+<?php require 'class.phpmailer.php'; ?> 
 <?php
 
 header("Access-Control-Allow-Origin: *");
@@ -74,11 +75,12 @@ if ((isset($userID) && !empty($userID))) {
   //Check is one data was created in database the echo result
   if ($statement->rowcount() == 1) {
 
+    require('email.php');
+}
+  if ($statement->rowcount() == 1) {
 
-    echo json_encode([
-      'status' => '1',
-      'message' => 'profile.php'
-    ]);
+
+    
   }
 } else {
 
