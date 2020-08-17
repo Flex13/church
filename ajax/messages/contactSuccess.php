@@ -17,7 +17,7 @@
                             <p class="section-heading text-center mb-4">Become A Member</p>
 
                             <!-- Submit button -->
-                            <a href="register.php" class="btn btn-primary btn-block mb-2">
+                            <a href="registration.php?m=register" class="btn btn-primary btn-block mb-2">
                                     Register
                                 </a>
 

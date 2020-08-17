@@ -41,26 +41,10 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="bg-image hover-overlay rounded ripple m-0 p-0" data-ripple-color="light" style="height: 400px;">
-                                    <img src="assets/img/event.jpg" class="img-fluid m-0 p-0 mx-auto" style="height: 100%;">
-                                    <a href="#!">
-                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                    </a>
-                                </div>
+                                
                             </div>
 
                             <div class="col-md-8">
-                                <div class="px-3">
-                                    <h5 class="text-warning my-3">Church Webinar August 2020</h5>
-                                    <p>
-                                        Blessed to be a source of blessing<br>
-                                        <b>ZoomID:</b> 2031580625<br>
-                                        <b>Passcode:</b> 12345678
-                                    </p>
-
-                                    <a href="#" class="btn btn-primary">View</a>
-                                </div>
-
                             </div>
                         </div>
 

@@ -1,6 +1,7 @@
 
 <?php include('../../config/db.php'); ?>
 <?php include('../../config/functions.php'); ?>
+<?php require 'class.phpmailer.php'; ?> 
 <?php
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
@@ -88,10 +89,7 @@ function singup_submit()
         if ($statement->rowcount() == 1) {
 
 
-            $page = "messages.php?m=register";
-            echo json_encode([
-                'status' => '1', 
-                'message' => $page]);
+            require('email.php');
 
         }
     }

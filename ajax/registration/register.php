@@ -1,65 +1,64 @@
-
 <section>
-<div class=" mx-auto text-center mb-4" style="max-width: 700px;">
+    <div class=" mx-auto text-center mb-4" style="max-width: 700px;">
         <div class="card-body">
-                            
-                            <form id="userRegister_form">
-                            <h1 class="section-heading text-center mb-4">Become a member</h1>
-                                <!-- 2 column grid layout with text inputs for the first and last names -->
-                                <div class="row mb-4">
-                                    <div class="col">
-                                        <div class="form-group">
-                                            <input type="text" id="name" name="name" class="form-control" placeholder="First Name" required />
-                                            <div class="name-error error"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group">
-                                            <input type="text" id="surname" name="surname" class="form-control" placeholder="Surname" required />
-                                            <div class="surname-error error"></div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <!-- Email input -->
-                                <div class="form-group mb-4">
-                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required />
-                                    <div class="email-error error"></div>
-                                </div>
+            <form id="userRegister_form">
+                <h1 class="section-heading text-center mb-4">Become a member</h1>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row mb-4">
+                    <div class="col-md-6 mb-4">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="First Name" required />
+                            <div class="name-error error"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="surname" name="surname" class="form-control" placeholder="Surname" required />
+                            <div class="surname-error error"></div>
+                        </div>
+                    </div>
+                </div>
 
-                                <!-- Number input -->
-                                <div class="form-group mb-4">
-                                    <input type="number" id="cell" name="cell" class="form-control" placeholder="Cell" required />
-                                    <div class="cell-error error"></div>
-                                </div>
+                <!-- Email input -->
+                <div class="form-group mb-4">
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required />
+                    <div class="email-error error"></div>
+                </div>
 
-                                <div class="form-group mb-4">
-                                    <select id="gender" name="gender" class="form-control" required>
-                                        <option>Select Gender</option>
-                                        <option value="Male">Male</option>
-                                        <option value="Female">Female</option>
-                                    </select>
-                                    <div class="province-error error"></div>
-                                </div>
+                <!-- Number input -->
+                <div class="form-group mb-4">
+                    <input type="number" id="cell" name="cell" class="form-control" placeholder="Cell" required />
+                    <div class="cell-error error"></div>
+                </div>
+
+                <div class="form-group mb-4">
+                    <select id="gender" name="gender" class="form-control" required>
+                        <option>Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <div class="gender-error error"></div>
+                </div>
 
 
-                                <div class="form-group mb-4">
-                                    <input type="password" placeholder="Enter Password" name="password" id="password" class="form-control" required />
-                                    <div class="password-error error"></div>
-                                </div> <!-- form-group// -->
+                <div class="form-group mb-4">
+                    <input type="password" placeholder="Enter Password" name="password" id="password" class="form-control" required />
+                    <div class="password-error error"></div>
+                </div> <!-- form-group// -->
 
-                                <div class="form-group mb-4">
-                                    <input type="password" placeholder="Confirm Password" name="cpassword" id="passwordc" class="form-control" required />
-                                    <div class="passwordc-error error"></div>
-                                </div>
+                <div class="form-group mb-4">
+                    <input type="password" placeholder="Confirm Password" name="cpassword" id="passwordc" class="form-control" required />
+                    <div class="passwordc-error error"></div>
+                </div>
 
-                                <!-- Submit button -->
-                                <button type="button" id="submit" class="btn btn-danger btn-block mb-4">
-                                    Register
-                                </button>
-                            </form>
-</div>
-</div>
+                <!-- Submit button -->
+                <button type="button" id="submit" class="btn btn-success btn-block mb-4">
+                    Register
+                </button>
+            </form>
+        </div>
+    </div>
 </section>
 
 <script type="text/javascript" language="javascript">
@@ -85,7 +84,7 @@
                 $("#name").removeClass("border-green");
                 name = "";
             } else if (name_reg.test(name_store)) {
-                $(".name-error").html("Integer is not allowed!");
+                $(".name-error").html("");
                 $("#name").addClass("border-green");
                 $("#name").removeClass("border-red");
                 name = name_store;
@@ -304,7 +303,7 @@
                 gender = "";
             }
 
-            
+
 
             if (password.length == "") {
                 $(".password-error").html("Password is required!");
@@ -331,7 +330,7 @@
                     },
                     success: function(feedback) {
                         if (feedback['status'] == "1") {
-                            location = feedback.msg;
+                            location = feedback.message;
                         }
                     }
                 })

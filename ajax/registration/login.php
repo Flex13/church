@@ -1,36 +1,34 @@
-
-
 <section>
-<div class=" mx-auto text-center mb-4" style="max-width: 500px;">
+    <div class=" mx-auto text-center mb-4" style="max-width: 500px;">
         <div class="card-body">
 
-                <form id="login_form">
+            <form id="login_form">
 
                 <h1 class="section-heading text-center mb-4">Login</h1>
-                    <!-- Email input -->
-                    <div class="form-group mb-4">
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required />
-                        <div class="email-error error"></div>
+                <!-- Email input -->
+                <div class="form-group mb-4">
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required />
+                    <div class="email-error error"></div>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-group mb-4">
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Password" />
+                    <div class="password-error error"></div>
+                </div>
+
+
+                <div class="form-group mb-4">
+                    <div class="col text-center">
+                        <!-- Simple link -->
+                        <a href="forgot.php">Forgot password?</a>
                     </div>
+                </div>
 
-                    <!-- Password input -->
-                    <div class="form-group mb-4">
-                        <input type="password" id="password" name="password" class="form-control" placeholder="Password" />
-                        <div class="password-error error"></div>
-                    </div>
-
-
-                    <div class="form-group mb-4">
-                        <div class="col text-center">
-                            <!-- Simple link -->
-                            <a href="forgot.php">Forgot password?</a>
-                        </div>
-                    </div>
-
-                    <!-- Submit button -->
-                    <button type="button" id="submit" class="btn btn-primary btn-block">Sign in</button>
-                </form>
-    </div>
+                <!-- Submit button -->
+                <button type="button" id="submit" class="btn btn-primary btn-block">Sign in</button>
+            </form>
+        </div>
     </div>
 </section>
 

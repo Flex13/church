@@ -6,9 +6,9 @@ class Database
 
     // specify your own database credentials
     private $host = "localhost";
-    private $db_name = "hpsafmvaal_church";
-    private $Ausername = "hpsafmvaal_church";
-    private $password = "hpsafmvaal2030";
+    private $db_name = "cms";
+    private $Ausername = "root";
+    private $password = "";
     public $conn;
 
     // get the database connection

@@ -13,8 +13,8 @@
                     <!-- Card -->
                     <div class="card shadow-2-strong ">
                         <div class="bg-image hover-overlay ripple" data-ripple-color="light">
-                            <img src="assets/img/intro.jpg" class="img-fluid" />
-                            <a href="#!">
+                            <img src="assets/img/children.jpg" class="img-fluid" />
+                            <a href="events-page.php">
                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                             </a>
                         </div>
@@ -29,8 +29,8 @@
                 <div class="col-lg-4 col-md-4 mb-4">
                     <div class="card shadow-2-strong ">
                         <div class="bg-image hover-overlay ripple" data-ripple-color="light">
-                            <img src="assets/img/contact.jpg" class="img-fluid" />
-                            <a href="#!">
+                            <img src="assets/img/women.jpg" class="img-fluid" />
+                            <a href="events-page.php">
                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                             </a>
                         </div>
@@ -45,7 +45,7 @@
                     <div class="card shadow-2-strong ">
                         <div class="bg-image hover-overlay ripple" data-ripple-color="light">
                             <img src="assets/img/events.jpg" class="img-fluid" />
-                            <a href="#!">
+                            <a href="events-page.php">
                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                             </a>
                         </div>
@@ -61,8 +61,8 @@
                 <div class="col-lg-4 col-md-4 mb-4">
                     <div class="card shadow-2-strong ">
                         <div class="bg-image hover-overlay ripple" data-ripple-color="light">
-                            <img src="assets/img/youth.jpg" class="img-fluid" />
-                            <a href="#!">
+                            <img src="assets/img/joel.jpg" class="img-fluid" />
+                            <a href="events-page.php">
                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                             </a>
                         </div>
@@ -79,7 +79,7 @@
                     <div class="card shadow-2-strong ">
                         <div class="bg-image hover-overlay ripple" data-ripple-color="light">
                             <img src="assets/img/men.jpg" class="img-fluid" />
-                            <a href="#!">
+                            <a href="events-page.php">
                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                             </a>
                         </div>

@@ -1,6 +1,6 @@
 <div class="col-md-12 col-offset-0 text-center">
   <div id="logo">
-      <img src="assets/img/churchLogo2.png" height="190" alt="Arms of SA">
+    <img src="assets/img/churchLogo2.png" height="190" alt="Arms of SA">
   </div>
 
 </div>
@@ -19,13 +19,13 @@
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link <?php if ($page_title == 'Home') {
-                                                echo "active";
-                                            } ?>" aria-current="page" href="index.php">Home</a>
+                                echo "active";
+                              } ?>" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle <?php if ($page_title == 'About') {
                                                 echo "active";
-                                            } ?>" href="about.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                              } ?>" href="about.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
             About
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -35,19 +35,34 @@
         </li>
         <li class="nav-item">
           <a class="nav-link <?php if ($page_title == 'Ministries') {
-                                                echo "active";
-                                            } ?>" href="ministry.php">Ministry</a>
+                                echo "active";
+                              } ?>" href="ministry.php">Ministry</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link <?php if ($page_title == 'Register') {
-                                                echo "active";
-                                            } ?>" href="registration.php?m=register">Become a member</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link <?php if ($page_title == 'Login') {
-                                                echo "active";
-                                            } ?>" href="registration.php?m=login">Login</a>
-        </li>
+        <?php
+        if (!isset($_SESSION['id'])) : ?>
+          <li class="nav-item">
+            <a class="nav-link <?php if ($page_title == 'Register') {
+                                  echo "active";
+                                } ?>" href="registration.php?m=register">Become a member</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <?php if ($page_title == 'Login') {
+                                  echo "active";
+                                } ?>" href="registration.php?m=login">Login</a>
+          </li>
+        <?php else : ?>
+          <li class="nav-item">
+            <a class="nav-link <?php if ($page_title == 'Login') {
+                                  echo "active";
+                                } ?>" href="profile.php">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <?php if ($page_title == 'Login') {
+                                  echo "active";
+                                } ?>" href="logout.php">Logout</a>
+          </li>
+
+        <?php endif ?>
       </ul>
       <!-- Left links -->
     </div>

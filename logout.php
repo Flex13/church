@@ -19,7 +19,7 @@ if (isset($_POST['logout'])) {
 }
 
 session_destroy();
-echo "<script>window.open('login.php','_self')</script>";
+echo "<script>window.open('registration.php?m=login','_self')</script>";
 exit();
 
 ?>

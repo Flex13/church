@@ -24,7 +24,6 @@ body {
     overflow-x: hidden;
     font-size: 1rem;
     line-height: 1.5;
-  min-height: 100vh;
   margin: 0;
 }
 
@@ -48,12 +47,6 @@ body {
 .fa-spinner {
     font-size: 14px;
     color: #7047d7;
-}
-
-
-
-@-ms-viewport {
-    width: device-width;
 }
 
 

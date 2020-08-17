@@ -1,5 +1,6 @@
 <?php include('../../config/db.php'); ?>
 <?php include('../../config/functions.php'); ?>
+<?php require 'class.phpmailer.php'; ?> 
 <?php
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
@@ -50,23 +51,17 @@ function contact_submit()
 
         // Add the data into the database 
         $statement->execute(array(
-            ':name' => $name, 
-            ':surname' => $surname, 
+            ':name' => $name,
+            ':surname' => $surname,
             ':email' => $email,
-            ':message' => $message, 
+            ':message' => $message,
             ':cell' => $cell
         ));
 
         //Check is one data was created in database the echo result
         if ($statement->rowcount() == 1) {
 
-            $page = "message.php?m=contact";
-            echo json_encode([
-                'status' => '1', 
-                'message' => $page]);
-            
-
-            
+            require('email.php');
         }
     }
 }
