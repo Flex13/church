@@ -10,6 +10,7 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, X-Requested-With");
 
+
 // get database connection
 $database = new Database();
 $db = $database->getConnection();
@@ -76,11 +77,6 @@ if ((isset($userID) && !empty($userID))) {
   if ($statement->rowcount() == 1) {
 
     require('email.php');
-}
-  if ($statement->rowcount() == 1) {
-
-
-    
   }
 } else {
 

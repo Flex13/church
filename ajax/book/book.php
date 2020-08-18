@@ -323,7 +323,7 @@
                             location = feedback.message;
                         } else if (feedback['error'] == "login") {
                             Swal.fire({
-                                title: 'Login to Order',
+                                title: 'Please Login',
                                 icon: 'warning',
                                 showConfirmButton: false,
                             });

@@ -184,7 +184,7 @@ $mail_body = '
                                                     <p>Name: ' . $name . '</p>
                                                     <p>Surname: ' . $surname . '</p>
                                                     <p>Email: ' . $email . '</p>
-                                                    <p>Email: ' . $cell . '</p>
+                                                    <p>Cell: ' . $cell . '</p>
                                                     <p>Date: ' . $date . '</p>
                                                     <p>Time: ' . $time . '</p>
                                                     <p>Comment: ' . $comment . '</p>
@@ -268,9 +268,8 @@ $mail_body = '
             
             
             ';
-
 $mail->addAddress('admin@hpsafmvaal.org.za');
-$mail->addCC('peterchinyani@hpsafmvaal.org.za','remymutombo@hpsafmvaal.org.za');
+$mail->addCC('peterchinyani@hpsafmvaal.org.za', 'remymutombo@hpsafmvaal.org.za', 'info@hpsafmvaal.org.za');
 $mail->Subject = "Pastor Appointments";
 $mail->Body = $mail_body;
 
@@ -282,6 +281,6 @@ if (!$mail->Send()) {
     echo json_encode([
         'status' => '1',
         'message' => 'profile.php'
-      ]);
+    ]);
     $db = null;
 }

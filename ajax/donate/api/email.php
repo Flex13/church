@@ -22,6 +22,7 @@ $mail->FromName = "HPS AFM Vaal";
 $mail_body = '
             
 
+
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
 
 <head>
@@ -144,7 +145,7 @@ $mail_body = '
             <tr style="vertical-align: top;" valign="top">
                 <td style="word-break: break-word; vertical-align: top;" valign="top">
                     <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color:#ece8e5"><![endif]-->
-                    <div style="background-image:url("https://hpsafmvaal.org.za/assets/img/event.jpg");background-position:top center;background-repeat:no-repeat;background-color:transparent;">
+                    <div style="background-image:url(" https://hpsafmvaal.org.za/assets/img/event.jpg");background-position:top center;background-repeat:no-repeat;background-color:transparent;">
                         <div class="block-grid" style="Margin: 0 auto; min-width: 320px; max-width: 600px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: #ffffff;">
                             <div style="border-collapse: collapse;display: table;width: 100%;background-color:#ffffff;">
                                 <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-image:url("https://hpsafmvaal.org.za/assets/img/event.jpg");background-position:top center;background-repeat:no-repeat;background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:#ffffff"><![endif]-->
@@ -156,7 +157,7 @@ $mail_body = '
                                             <!--<![endif]-->
                                             <div align="center" class="img-container center autowidth" style="padding-right: 0px;padding-left: 0px;">
                                                 <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]-->
-                                                <div style="font-size:1px;line-height:35px"> </div><a href="https://hpsafmvaal.org.za/" style="outline:none" tabindex="-1" target="_blank"> <img align="center" alt="Logo" border="0" class="center autowidth" src="https://hpsafmvaal.org.za/assets/img/churchLogo2.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 216px; display: block;" width="216" /></a>
+                                                <div style="font-size:1px;line-height:35px"> </div><a href="https://hpsafmvaal.org.za/" style="outline:none" tabindex="-1" target="_blank"> <img align="center" alt="Logo" border="0" class="center autowidth" src="https://hpsafmvaal.org.za/assets/img/churchLogo2.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 216px; display: block;" title="Logo" width="216" /></a>
                                                 <div style="font-size:1px;line-height:30px"></div>
                                                 <!--[if mso]></td></tr></table><![endif]-->
                                             </div>
@@ -177,7 +178,21 @@ $mail_body = '
                                             <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 40px; padding-left: 40px; padding-top: 10px; padding-bottom: 25px; font-family: Georgia, serif"><![endif]-->
                                             <div style="color:#555555;font-family:Georgia, Times, Times New Roman, serif;line-height:1.8;padding-top:10px;padding-right:40px;padding-bottom:25px;padding-left:40px;">
                                                 <div style="font-size: 14px; line-height: 1.8; color: #555555; font-family: Georgia, Times, Times New Roman, serif; mso-line-height-alt: 25px;">
-                                                    <p style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: center; mso-line-height-alt: 25px; margin: 0;">Welcome to our family HPS Vaal. Thank you for registering as a member. Feel at home, and enjoy serving God with us.</p>
+                                                    <p style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: center; mso-line-height-alt: 25px; margin: 0;">
+
+                                                        <p>A Donation has been made by:</p>
+                                                        <p>Name: ' . $name . '</p>
+                                                        <p>Surname: ' . $surname . '</p>
+                                                        <p>Email: ' . $email . '</p>
+                                                        <p>Cell: ' . $cell . '</p>
+                                                        <p>Amount: R' . $amount . '</p>
+                                                        <p>Message: ' . $message . '</p>
+
+                                                        <p>Please Contact Member to confirm booking Donation.</p>
+
+
+
+                                                    </p>
                                                 </div>
                                             </div>
                                             <!--[if mso]></td></tr></table><![endif]-->
@@ -189,6 +204,19 @@ $mail_body = '
                                                 <!--[if mso]></center></v:textbox></v:roundrect></td></tr></table><![endif]-->
                                             </div>
                                             <table border="0" cellpadding="0" cellspacing="0" class="divider" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" valign="top" width="100%">
+                                                <tbody>
+                                                    <tr style="vertical-align: top;" valign="top">
+                                                        <td class="divider_inner" style="word-break: break-word; vertical-align: top; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding-top: 45px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;" valign="top">
+                                                            <table align="center" border="0" cellpadding="0" cellspacing="0" class="divider_content" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-top: 1px solid #EAEAEA; width: 100%;" valign="top" width="100%">
+                                                                <tbody>
+                                                                    <tr style="vertical-align: top;" valign="top">
+                                                                        <td style="word-break: break-word; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" valign="top"><span></span></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
                                             </table>
 
                                             <table border="0" cellpadding="0" cellspacing="0" class="divider" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" valign="top" width="100%">
@@ -239,9 +267,9 @@ $mail_body = '
             
             ';
 
-$mail->addAddress($email);
-$mail->addCC('admin@hpsafmvaal.org.za', 'info@hpsafmvaal.org.za');
-$mail->Subject = "Welcome";
+$mail->addAddress('admin@hpsafmvaal.org.za');
+$mail->addCC('peterchinyani@hpsafmvaal.org.za', 'info@hpsafmvaal.org.za');
+$mail->Subject = "Donation";
 $mail->Body = $mail_body;
 
 //Error Handling for PHPMailer
@@ -249,6 +277,9 @@ if (!$mail->Send()) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     $db = null;
 } else {
-    echo json_encode(['status' => '1', 'message' => 'message.php?m=register']);
+    echo json_encode([
+        'status' => '1',
+        'message' => 'profile.php'
+    ]);
     $db = null;
 }
